@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-// import "./styles.css";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "src/styling/selfCare.css";
-
-import useEffect from "react";
-
+import "../styling/selfCare.css";
+import { ButtonContainer } from "./Button.js";
+import "../styling/styles.css";
 /* end of imports */
 
 export default function App() {

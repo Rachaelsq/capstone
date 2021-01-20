@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-/* import { ButtonContainer } from "./components/Button.js";
- */import FeatureCard from "./FeatureCard";
-// import "../styles.css";
-
+import FeatureCard from "./FeatureCard";
+import { ButtonContainer } from "./Button.js";
+import "../styling/styles.css";
 /* end of imports */
 
 const FeatureCards = (props) => {

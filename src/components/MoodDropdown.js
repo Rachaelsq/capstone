@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import "../styles.css";
-import "src\styling\moodpagestyling.css";
+import "../styling/moodpagestyling.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 import { ButtonContainer } from "./Button";

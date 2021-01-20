@@ -1,4 +1,6 @@
 import React from "react";
+import { ButtonContainer } from "./Button.js";
+import "../styling/styles.css";
 
 export default function JournalList(props) {
 return (

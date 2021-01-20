@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-/* import "../styles.css";
-import "./timerstyling.css"; */
+import "../styling/styles.css";
+import "../styling/timerstyling.css";
 import { ButtonContainer } from "./Button";
 
 

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 // import Calendar from "react-calendar";
-import Navbar from "src\components\Navbar.js";
+import Navbar from "../components/Navbar.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import FeelGoodBox from "src\components\FeelGoodBox.js";
-import FeaturedArtist from "..\components\FeaturedArtist.js";
+import FeelGoodBox from "../components/FeelGoodBox.js";
+import FeaturedArtist from "../components/FeaturedArtist.js";
+import "../styling/selfCare.css";
+import CalendarScript2 from "../components/CalendarScript2.js";
 
 
 

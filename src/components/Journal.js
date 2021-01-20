@@ -1,38 +1,33 @@
 import React, { useState, useEffect } from "react";
 // import Calendar from "react-calendar";
-
 import Navbar from "../components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MoodDropdown from "../components/MoodDropdown";
 import CalendarScript2 from "../components/CalendarScript2";
-import Journal from "../components/Journal";
-
+import { ButtonContainer } from "./Button.js";
+import "../styling/styles.css";
 /* end of imports */
 
-export default function DailyCheckInPage() {
-const [dailyJournal, setDailyJournal] = useState("");
-useEffect(() => {
-    if (localStorage.getItem("journalEntry")) {
-    setDailyJournal(localStorage.getItem("journalEntry"));
-    }
-    console.log(dailyJournal, "daily journal");
-}, []);
 
-return (
-    <div class="container-fluid dailyContainer" style={{ color: "white" }}>
-        <h3> this is a daily check in</h3>
-        <div class="row" style={{ color: "white" }}>
-        <div class="col-sm d-flex justify-content-center ">{dailyJournal}</div>
 
-        <div class="col-sm d-flex justify-content-center "></div>
-
-        <div class="col-sm d-flex justify-content-center "></div>
-
-        <div
-            class="col-sm d-flex justify-content-center align-items-end"
-            id="appCalendarId"
-        ></div>
+export default function App({ journalEntry, handleClick, setJournalEntry }) {
+    return (
+        <div id="journalContainer">
+        <div id="topJournalButtons">
+            <button>Delete latest entry</button>
+            <button class="journalButton">Create new entry</button>
         </div>
-    </div>
-);
+            <h3 id="journalTitle"> Journal</h3>
+        <div id="textAreaId">
+            <textarea
+            placeholder="Write about your day..."
+            value={journalEntry}
+            onChange={(e) => setJournalEntry(e.target.value)}
+            ></textarea>
+        </div>
+        <div id="saveButton">
+            <ButtonContainer onClick={handleClick}>Save</ButtonContainer>
+        </div>
+        </div>
+    );
 }

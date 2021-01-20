@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-// import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "src/styling/selfCare.css";
-
+import "../styling/selfCare.css";
+import { ButtonContainer } from "./Button.js";
+import "../styling/styles.css";
 import useEffect from "react";
-
 /* end of imports */
 
 export default function FeaturedArtist() {

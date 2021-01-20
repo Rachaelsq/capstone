@@ -8,7 +8,7 @@ import {
   withRouter
 } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "/stylingstyles.css";
+import "./styling/styles.css";
 //pages
 import DailyCheckInPage from "./pages/DailyCheckInPage.js";
 import HomePage from "./pages/HomePage.js";
@@ -22,12 +22,13 @@ import SelfCarePage from "./pages/SelfCarePage.js";
 import FeatureCards from "./components/FeatureCards.js";
 import SignupForm from "./components/SignupForm.js";
 import MoodDropdown from "./components/MoodDropdown.js";
-import QuoteApi from "./components/Quotes";
 import CalendarScript2 from "./components/CalendarScript2";
 import MeditationTimer from "./components/MeditationTimer";
 import Journal from "./components/Journal";
 import JournalList from "./components/JournalList";
 import Navbar from "./components/Navbar";
+import QuoteApi from "./components/QuoteApi";
+import Quotes from "./components/Quotes";
 
 //end components
 

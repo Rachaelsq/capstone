@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-/* import { ButtonContainer } from "src/components/Button.js";
- */// import "../styles.css";
+import styled from "styled-components"; //
+import { ButtonContainer } from "./Button.js";
+import "../styling/styles.css";
 
 const FeatureCard = (props) => (
   <section>

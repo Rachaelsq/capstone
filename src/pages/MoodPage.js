@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 // import Calendar from "react-calendar";
-import Navbar from "src\components\Navbar.js";
+import Navbar from "../components/Navbar.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
-
-/* import CalendarScript2 from "src\components\CalendarScript2.js";
- */
-
+import Journal from "../components/Journal";
+import MeditationTimer from "../components/MeditationTimer";
+import JournalList from "../components/JournalList";
+import MoodDropdown from "../components/MoodDropdown";
+import CalendarScript2 from "../components/CalendarScript2";
+import "../styling/moodpagestyling.css";
+import "../styling/timerstyling.css";
+import "../styling/journalstyling.css";
 
 /* end of imports */
 /*
@@ -50,12 +52,12 @@ const MoodPage = () => {
 
     function handleClick(e) {
         e.preventDefault();
-        console.log(journalEntry);
-        const newArray = journalEntryArray;
+/*         console.log(journalEntry);*/        
+const newArray = journalEntryArray;
         newArray.push({
         UserId: userId,
         journalEntry: journalEntry,
-        Date: new Date().getMonth()
+        Date: new Date()
     });
     setJournalEntryArray(newArray);
     }
