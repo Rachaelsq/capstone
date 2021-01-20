@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Lato", sans-serif important!;
+}
+
+nav ol ul li  {
+  list-style-type: none;
+}
+
+:root {
+  --info: #17a2b8;
+  --mainBlue: #2a2a72;
+  --greyBackground: #141414;
+}
+
+/* END OF CSS RESET */
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* END FONTS */
+
+/*
+=============== 
+BODY
+===============
+*/
+body {
+  background-color: #232323 important!;
+}
+
+#navbar2Id {
+  /* margin-top: 300px; */
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+#checkboxes {
+  margin-left: 10px;
+}
+
+/*
+=============== 
+MOOD
+===============
+*/
+#dropdownContainer {
+  background: linear-gradient(
+      180deg,
+      rgba(181, 255, 252, 0.3) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    rgba(31, 122, 140, 0.3);
+  box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 45vw;
+  max-width: 350px;
+  height: 30vw;
+  margin-top: 2rem;
+}
