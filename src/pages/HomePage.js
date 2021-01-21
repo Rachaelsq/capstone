@@ -33,4 +33,3 @@ HOME PAGE
 //end homepage
 
 export default HomePage;
-/* in react you have local state which is local to your */
