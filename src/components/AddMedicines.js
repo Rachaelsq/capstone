@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useContext } from "react";
-import { GlobalContext } from "./context/MedicineGlobalState";
+import { GlobalContext } from "../context/GlobalState.js";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styling/styles.css";

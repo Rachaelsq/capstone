@@ -8,11 +8,18 @@ import JournalList from "../components/JournalList";
 import MoodDropdown from "../components/MoodDropdown";
 import CalendarScript2 from "../components/CalendarScript2";
 import "../styling/moodpagestyling.css";
+import "../styling/fitnessStyling.css";
 import "../styling/timerstyling.css";
 import "../styling/journalstyling.css";
-/* import MedicineGlobalState from "../context/MedicineGlobalState.js"
-import MedicineAppReducer from "../context/MedicineAppReducer.js" */
+import MedicineGlobalState from "../context/GlobalState.js"
+import MedicineAppReducer from "../context/MedicineAppReducer.js" 
 import Medicinelist from "../components/MedicineList.js";
+import { Route, Switch } from "react-router-dom";
+import { GlobalProvider } from "../context/GlobalState.js";
+import { Addmedicine } from "../components/AddMedicines";
+import { Editmedicine } from "../components/EditMedicines";
+
+
 /* end of imports */
 /*
 =============== 
@@ -20,7 +27,25 @@ MOOD PAGE
 ===============
 */
 
-const FitnessPage = () => (
+
+const FitnessPage = () => {
+    return (
+        <GlobalProvider>
+            <Switch>
+                <Route path="/add" component={Addmedicine} exact />
+                <Route path="/edit/:id" component={Editmedicine} exact />
+                <>
+                <h1>fitness page test h1</h1>
+                </>
+            </Switch>
+        </GlobalProvider>
+    );
+}
+
+
+
+
+/* const FitnessPage = () => (
     <div className="App">
         <div class="container-fluid">
         <div class="row">
@@ -36,7 +61,7 @@ const FitnessPage = () => (
     </div>
     </div>
 );
-
+ */
   //end self care
 
 export default FitnessPage;

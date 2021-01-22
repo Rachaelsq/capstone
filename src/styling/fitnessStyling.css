@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Lato", sans-serif important!;
+  color: white important!;
+
+}
+
+nav ol ul li  {
+  list-style-type: none;
+}
+
+:root {
+  --info: #17a2b8;
+  --mainBlue: #2a2a72;
+  --greyBackground: #141414;
+}
+
+/* END OF CSS RESET */
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* END FONTS */
+
+/*
+=============== 
+BODY
+===============
+*/
+body {
+  background-color: #232323 important!;
+  color: white important!;
+}
