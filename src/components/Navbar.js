@@ -21,7 +21,7 @@ render() {
             <Link to="/SelfCarePage" className="nav-link">
                 self care
             </Link>
-            <Link to="/fitness" className="nav-link">
+            <Link to="/FitnessPage" className="nav-link">
                 fitness
             </Link>
             <Link to="/DailyCheckInPage" className="nav-link">

@@ -14,6 +14,7 @@ import DailyCheckInPage from "./pages/DailyCheckInPage.js";
 import HomePage from "./pages/HomePage.js";
 import MoodPage from "./pages/MoodPage.js";
 import SelfCarePage from "./pages/SelfCarePage.js";
+import FitnessPage from "./pages/FitnessPage.js";
 /* import FitnessPage from "src/pages/FitnessPage.js";
  */
 //end pages
@@ -53,6 +54,7 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/MoodPage" exact component={MoodPage} />
+          <Route path="/FitnessPage" exact component={FitnessPage} />
           <Route path="/SelfCarePage" exact component={SelfCarePage} />
           <Route path="/DailyCheckInPage" exact component={DailyCheckInPage} />
         </Switch>

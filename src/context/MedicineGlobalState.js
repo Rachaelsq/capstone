@@ -1,5 +1,5 @@
-import React, { createContext, useReducer } from "react";
-import AppReducer from "./AppReducer";
+/* import React, { createContext, useReducer } from "react";
+import AppReducer from "./MedicineAppReducer"; */
 
 //start by setting the initial state
 const initialState = {
@@ -12,17 +12,8 @@ medicines: [
 ]
 };
 
-export const GlobalContext = createContext(initialState);
 
-export const GlobalProvider = ({ children }) => {
-    const [state, setState] = useState(initialState);
 
-    return (
-        <Context.Provider value={[state, setState]}>{children}</Context.Provider>
-    );
-};
-
-export default GlobalProvider;
 
 
 
