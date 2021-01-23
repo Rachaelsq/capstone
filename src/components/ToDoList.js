@@ -10,6 +10,7 @@ const ToDoList = ( { todos, setTodos } ) => {
             <Todo 
             setTodos={setTodos} 
             todos={todos} 
+            todo={todo} 
             key={todo.id} 
             text={todo.text} />
         ))}

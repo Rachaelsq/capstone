@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-const ToDo = ( {text, todos, todo, setTodos} ) => {
+const ToDo = ({ text, todos, todo, setTodos }) => {
     //events
     const deleteHandler = () => {
-        setTodos(todos.filter(el => el.id !== todos.id))
-    }
+        setTodos(todos.filter(el => el.id !== todo.id))
+
+    };
     return(
         <div className="todo">
             <li className="{todo-item}">{text}</li>
