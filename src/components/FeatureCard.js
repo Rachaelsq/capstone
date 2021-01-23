@@ -5,7 +5,7 @@ import { ButtonContainer } from "./Button.js";
 import "../styling/styles.css";
 
 const FeatureCard = (props) => (
-  <section>
+  <section id="separateFeature">
     <h5> {props.subtitle} </h5>
     <p> {props.description} </p>
   </section>
