@@ -16,6 +16,7 @@ const ToDoForm = ({ setInputText, todos, setTodos, inputText }) => {
 
     return (
     <form>
+                <header>to do list</header>
         <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
         <button onClick={submitTodoHandler} className="todo-button" type="submit">
             <i className="fas fa-plus-square"></i>

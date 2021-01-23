@@ -32,10 +32,11 @@ HOME PAGE
 
 
         <div id="todoContainer">
-        <div class="col-sm d-flex justify-content-center">
+        <div>
 
-        <ToDoHeader />
-        <ToDoForm 
+{/*         <ToDoHeader />
+ */}        
+        <ToDoForm  class="col-sm d-flex justify-content-center"
         inputText={inputText} 
         todos={todos} 
         setTodos={setTodos} 

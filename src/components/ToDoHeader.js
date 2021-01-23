@@ -9,7 +9,7 @@ import "../styling/ToDoStyling.css";
 function ToDoHeader() {
     return (
         <>
-        <header>to do list header file</header>
+        <header>to do list</header>
         </>
     )
 }

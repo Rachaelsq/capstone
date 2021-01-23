@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: 'Roboto', sans-serif; */
-  font-family: "Lato", sans-serif important!;
+  font-family: 'Comfortaa', cursive important!;
   color: white important!;
 
 }
@@ -22,11 +22,6 @@ nav ol ul li  {
 
 /* END OF CSS RESET */
 
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-/* END FONTS */
 
 /*
 =============== 
