@@ -23,6 +23,7 @@ HOME PAGE
         </section>
         <hr />
         <QuoteApi />
+        <Quotes />
         <hr />
             <div class="col-sm d-flex justify-content-center">
                 <SignupForm />

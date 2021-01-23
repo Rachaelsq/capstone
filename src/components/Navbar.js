@@ -40,15 +40,20 @@ const NavWrapper = styled.nav`
 /* background: rgb(138,22,220, 0.5); */
 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-padding 0 0;
+padding  0 0;
 padding-right: 15px;
-max-height: 40px;
+max-height: 50px;
 
 .nav-link {
         color: white !important;
         font-size: 1.3rem;
         text-transform: capitalize;
         transition: all 0.5s ease-in-out;
+        border: solid 1px #7e7e7e;
+        padding-left: 30px;
+        padding-right: 30px;
+        letter-spacing: 2px;
+
 
     &:hover{
         background: #8C86C6;

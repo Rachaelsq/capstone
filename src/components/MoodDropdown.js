@@ -9,7 +9,7 @@ import { ButtonContainer } from "./Button";
 export default function App() {
 return (
         <div id="dropdownContainer">
-            <h3> :( </h3>
+            <h3> mood options </h3>
         <div class="form-check" id="checkboxes">
             <input
             class="form-check-input"

@@ -6,6 +6,8 @@
   box-sizing: border-box;
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Lato", sans-serif important!;
+
+  
 }
 
 nav ol ul li  {
@@ -43,11 +45,11 @@ body {
     ),
     linear-gradient(to right, rgb(48, 48, 48) 0%, rgb(51, 18, 9) 100%); */
 
-  background-color: #232323 important!;
+  background-color: #232323;
   color: white important!;
 
-  background-image: url("https://i2.wp.com/intuitiveharmonymedicine.com/wp-content/uploads/2021/01/purple-seamless.png?ssl=1&resize=450%2C450");
-  /* position: fixed; */
+/*   background-image: url("https://i2.wp.com/intuitiveharmonymedicine.com/wp-content/uploads/2021/01/purple-seamless.png?ssl=1&resize=450%2C450");
+ */  /* position: fixed; */
   /* min-width: 100%; */
   /* min-height: 100%; */
   /* background-size: cover; */
@@ -98,13 +100,12 @@ Navbars
 ===============
 */
 
-li {
-  border-left: solid 1px #fff;
+.nav-link {
+  /* border-right: dotted 1px #fff;
+  border-left: dotted 1px #fff; */
 }
 
-#navbar2Id {
-  margin-top: 5em;
-}
+
 
 #navbarFlexId {
   display: flex;

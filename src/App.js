@@ -17,6 +17,8 @@ import SelfCarePage from "./pages/SelfCarePage.js";
 import FitnessPage from "./pages/FitnessPage.js";
 import { Addmedicine } from "./components/AddMedicines";
 import { Editmedicine } from "./components/EditMedicines";
+import MedicineList from "./components/MedicineList.js";
+
 import { GlobalProvider } from "./context/GlobalState";
 //end pages
 

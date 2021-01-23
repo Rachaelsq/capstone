@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../styling/styles.css";
 import "../styling/fitnessStyling.css";
 
-export const Medicinelist = () => {
+const MedicineList = () => {
 const { medicines, removeMedicineInfo, editMedicineInfo } = useContext(
     GlobalContext
 );
@@ -40,3 +40,5 @@ return (
     </Fragment>
 );
 };
+
+export default MedicineList;

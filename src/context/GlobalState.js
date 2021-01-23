@@ -12,50 +12,31 @@ medicines: [
 ]
 };
 
-
 export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
-
-/* 
-===========
-REMOVE
-===========
-*/
 function removeMedicine(id) {
     dispatch({
         type: "REMOVE_MEDICINEINFO",
         payload: id
     });
     }
-/* 
-===========
-ADD
-===========
-*/
+
 function addMedicine(medicineInfo) {
     dispatch({
         type: "ADD_MEDICINEINFO",
         payload: medicineInfo
     });
     }
-/* 
-===========
-EDIT
-===========
-*/
+
 function editMedicine(medicineInfo) {
     dispatch({
         type: "EDIT_MEDICINEINFO",
         payload: medicineInfo
     });
 }
-/* 
-===========
-RETURN
-===========
-*/
+
 return (
     <GlobalContext.Provider
         value={{
