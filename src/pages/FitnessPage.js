@@ -19,6 +19,8 @@ import { GlobalProvider } from "../context/GlobalState.js";
 import { GlobalContext } from "../context/GlobalState.js";
 import  AddMedicine  from "../components/AddMedicine";
 import  Editmedicine  from "../components/Editmedicine";
+import { Link } from "react-router-dom";
+
 /* end of imports */
 
 /*
@@ -35,13 +37,32 @@ const FitnessPage = () => {
                 <Route path="/add" component={AddMedicine} exact />
                 <Route path="/edit/:id" component={Editmedicine} exact />
                 <>
-                <h1>fitness page test h1</h1>
                 <div className="App">
         <div class="container-fluid">
         <div class="row">
+            
             <div class="col-sm d-flex justify-content-center">
+                
+    <div id="medicineContainer">
+        
+    <h1 id="medicineLog">Medicine Log</h1>
+
+            <Link to="/add">
+            <button>
+                <span>Add Medicine</span>
+            </button>
+            </Link>
+
+
+            <div class="container-fluid">
+
                     <MedicineList />
             </div>
+            </div>
+
+
+
+</div>
 
         <div class="col-sm d-flex justify-content-center align-items-end"
             id="appCalendarId">

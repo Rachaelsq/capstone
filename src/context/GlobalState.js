@@ -6,8 +6,21 @@ const initialState = {
     medicines: [
     {
         id: 1,
-        name: "Ishan Manandhar",
-        directions: "Frontend Dev"
+        name: "Daily Multivitamin",
+        directions: "Take once a day with 2 glasses of water"
+        
+    },
+    {
+        id: 2,
+        name: "Herbal capsule",
+        directions: "Take once a day with food"
+        
+    },
+    {
+        id: 3,
+        name: "Tincture",
+        directions: "1 drop a day, 3x a day."
+        
     }
     ]
 };

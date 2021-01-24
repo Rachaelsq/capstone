@@ -31,3 +31,70 @@ BODY
 body {
 
 }
+
+
+#medicineContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 5px;
+  width: 100vw;
+/*   max-width: 800px;
+ */  
+/*  max-height: 1000px;
+ */  
+font-family: "Lato", sans-serif important!;
+  margin-right: 5px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(180deg, #0%, rgba(255, 255, 255, 0) 0%), #cc8b8c;
+
+  box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+button {
+  color: white;
+  background: rgb(68, 67, 71);
+  border-radius: 7px;
+  box-shadow: 0px 3px 5px 1px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#medicineLog {
+  text-align: center;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input {
+  font-size: 12px;
+  min-width: 600px;
+  border: none;
+}
+
+#editMedicine {
+  font-size: 20px;
+
+}
+
+#editContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+}
+
+#addMedContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 12px;
+
+}
