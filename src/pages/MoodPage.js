@@ -19,7 +19,7 @@ MOOD PAGE
 */
 
 const MoodPage = () => {
-    const [userId, setUserId] = useState(222);
+    const [userId, setUserId] = useState("");
     const [journalEntryArray, setJournalEntryArray] = useState([
         {
         journalEntry:
@@ -55,9 +55,7 @@ const MoodPage = () => {
 /*         console.log(journalEntry);*/        
 const newArray = journalEntryArray;
         newArray.push({
-        UserId: userId,
         journalEntry: journalEntry,
-        Date: new Date()
     });
     setJournalEntryArray(newArray);
     }
@@ -76,8 +74,8 @@ const newArray = journalEntryArray;
 
             <div class="col-sm d-flex justify-content-center">
                 <MeditationTimer />
-                <JournalList list={journalEntryArray} />
-            </div>
+{/*                 <JournalList list={journalEntryArray} />
+ */}            </div>
 
             <div class="col-sm d-flex justify-content-center">
                 <MoodDropdown />

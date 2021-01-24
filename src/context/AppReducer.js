@@ -1,33 +1,19 @@
 export default (state, action) => {
     switch (action.type) {
-/* 
-========
-REMOVE
-========
-*/
-    case "REMOVE_MEDICINEINFO":
-        return {
+        case "REMOVE_MEDICINE":
+            return {
             ...state,
             medicines: state.medicines.filter(
             (medicine) => medicine.id !== action.payload
             )
-            };
-/* 
-========
-ADD
-========
-*/
-        case "ADD_MEDICINEINFO":
+        };
+        case "ADD_MEDICINES":
             return {
             ...state,
-            medicines: [...state.medicines, action.payload]
-            };
-/* 
-========
-EDIT
-========
-*/
-        case "EDIT_MEDICINEINFO":
+            medicines: [action.payload, ...state.medicines]
+/*             medicines: [...state.medicines, action.payload]*/        
+};
+        case "EDIT_MEDICINE":
         const updatedMedicine = action.payload;
 
         const updatedMedicines = state.medicines.map((medicine) => {
@@ -36,16 +22,12 @@ EDIT
             }
             return medicine;
             });
-/* 
-========
-NEW LIST OF MEDICINES
-========
-*/
+
         return {
             ...state,
             medicines: updatedMedicines
-            };
+        };
         default:
-        return state;
+            return state;
     }
 };

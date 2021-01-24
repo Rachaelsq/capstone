@@ -10,17 +10,7 @@ export default function App() {
 return (
         <div id="dropdownContainer">
             <h3> mood options </h3>
-        <div class="form-check" id="checkboxes">
-            <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-            />
-                <label class="form-check-label" for="flexCheckDefault">
-                Default checkbox
-                </label>
-        </div>
+        
         </div>
 );
 }

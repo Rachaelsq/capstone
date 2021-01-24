@@ -15,8 +15,8 @@ import HomePage from "./pages/HomePage.js";
 import MoodPage from "./pages/MoodPage.js";
 import SelfCarePage from "./pages/SelfCarePage.js";
 import FitnessPage from "./pages/FitnessPage.js";
-import { Addmedicine } from "./components/AddMedicines";
-import { Editmedicine } from "./components/EditMedicines";
+import  AddMedicine  from "./components/AddMedicine";
+import  Editmedicine from "./components/Editmedicine";
 import MedicineList from "./components/MedicineList.js";
 
 import { GlobalProvider } from "./context/GlobalState";
@@ -60,8 +60,8 @@ export default function App() {
           <Route path="/FitnessPage" exact component={FitnessPage} />
           <Route path="/SelfCarePage" exact component={SelfCarePage} />
           <Route path="/DailyCheckInPage" exact component={DailyCheckInPage} />
-          <Route path="/add" exact component={Addmedicine} />
-          <Route path="/edit/:id" exact component={Editmedicine} />
+        {/*   <Route path="/add" exact component={Addmedicine} />
+          <Route path="/edit/:id" exact component={Editmedicine} /> */}
         </Switch>
         {/* <Navbar2 /> */}
       </React.Fragment>

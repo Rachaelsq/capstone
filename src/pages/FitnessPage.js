@@ -12,17 +12,18 @@ import "../styling/fitnessStyling.css";
 import "../styling/timerstyling.css";
 import "../styling/journalstyling.css";
 import MedicineGlobalState from "../context/GlobalState.js"
-import MedicineAppReducer from "../context/MedicineAppReducer.js" 
-import MedicineList from "../components/MedicineList.js";
+import AppReducer from "../context/AppReducer.js" 
+import MedicineList from "../components/MedicineList";
 import { Route, Switch } from "react-router-dom";
 import { GlobalProvider } from "../context/GlobalState.js";
-import { Addmedicine } from "../components/AddMedicines";
-import { Editmedicine } from "../components/EditMedicines";
+import { GlobalContext } from "../context/GlobalState.js";
+import  AddMedicine  from "../components/AddMedicine";
+import  Editmedicine  from "../components/Editmedicine";
 /* end of imports */
 
 /*
 =============== 
-MOOD PAGE
+FITNESS PAGE
 ===============
 */
 
@@ -31,7 +32,7 @@ const FitnessPage = () => {
     return (
         <GlobalProvider>
             <Switch>
-                <Route path="/add" component={Addmedicine} exact />
+                <Route path="/add" component={AddMedicine} exact />
                 <Route path="/edit/:id" component={Editmedicine} exact />
                 <>
                 <h1>fitness page test h1</h1>
@@ -56,26 +57,4 @@ const FitnessPage = () => {
 }
 
 export default FitnessPage;
-
-
-
-/* const FitnessPage = () => (
-    <div className="App">
-        <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm d-flex justify-content-center">
-                    <Medicinelist />
-            </div>
-
-        <div class="col-sm d-flex justify-content-center align-items-end"
-            id="appCalendarId">
-            <CalendarScript2 />
-        </div>
-        </div>
-    </div>
-    </div>
-);
- */
-  //end self care
-
 
