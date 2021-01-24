@@ -10,8 +10,8 @@ export default (state, action) => {
         case "ADD_MEDICINES":
             return {
             ...state,
-            medicines: [action.payload, ...state.medicines]
-/*             medicines: [...state.medicines, action.payload]*/        
+/*             medicines: [action.payload, ...state.medicines]*/
+            medicines: [...state.medicines, action.payload]    
 };
         case "EDIT_MEDICINE":
         const updatedMedicine = action.payload;

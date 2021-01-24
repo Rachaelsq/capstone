@@ -18,13 +18,10 @@ return (
                 key={medicine.id}
             >
             <div className="flex-auto text-left px-4 py-2 m-2">
-                <p className="text-gray-900 leading-none">{medicine.name}</p>
-                <p className="text-gray-600">{medicine.directions}</p>
-                <span className="inline-block text-sm font-semibold mt-1">
-                    {medicine.location}
-                </span>
+                <p>{medicine.name}</p>
+                <p>{medicine.directions}</p>
             </div>
-            <div className="flex-auto text-right px-4 py-2 m-2">
+            <div className="flex-auto text-right">
                 <Link to={`/edit/${medicine.id}`}>
                     <button
                         onClick={() => editMedicine(medicine.id)}
@@ -44,7 +41,7 @@ return (
             ))}
         </Fragment>
         ) : (
-        <p className="text-center bg-gray-100 text-gray-500 py-5">No data</p>
+        <p>No data</p>
     )}
     </Fragment>
 );

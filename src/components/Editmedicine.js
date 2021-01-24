@@ -20,7 +20,6 @@ const Editmedicine = (route) => {
         (med) => med.id === parseInt(medicineId)
         );
         setSeletedUser(selectedUser);
-      // eslint-disable-next-line
     }, []);
 
     const onSubmit = (e) => {

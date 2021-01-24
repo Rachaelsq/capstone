@@ -32,11 +32,11 @@ return (
             {featurecards.map((featurecard) => (
             <div>
                 <div id="featureCard">
-                    <FeatureCard
-                    subtitle=<ButtonContainer>
-                    {" "}
-                    {featurecard.subtitle}{" "}
-                            </ButtonContainer>
+                    <FeatureCard class="featureTitle"
+                    subtitle=
+                   
+                    {featurecard.subtitle}
+                            
                     description={featurecard.description}
                     />
                 </div>

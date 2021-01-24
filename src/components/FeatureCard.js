@@ -6,7 +6,7 @@ import "../styling/styles.css";
 
 const FeatureCard = (props) => (
   <section id="separateFeature">
-    <h5> {props.subtitle} </h5>
+    <h5 id="featureH5"> {props.subtitle} </h5>
     <p> {props.description} </p>
   </section>
 );

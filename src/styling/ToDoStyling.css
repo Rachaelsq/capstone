@@ -64,12 +64,18 @@ header {
   align-content: center;
   text-align: center;
   font-size: 30px;
+  text-decoration: underline;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
 
 form {
-    min-height: 20vh;
+    min-height: 10vh;
   
   }
   form input,
@@ -89,7 +95,9 @@ form {
     color: white;
   } 
 
-
+.todo-button {
+  margin-left: 50px;
+}
 
 
 .todo-container {

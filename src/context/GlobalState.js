@@ -37,7 +37,6 @@ export const GlobalProvider = ({ children }) => {
             payload: id
         });
     }
-    //this might have to be ADD_MEDICINE or S instead
     function addMedicine(medicines) {
         dispatch({
             type: "ADD_MEDICINE",

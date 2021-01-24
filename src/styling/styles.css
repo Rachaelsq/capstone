@@ -65,9 +65,8 @@ Feature Cards
   background: transparent;
   color: white;
   text-align: center;
-  width: 35vw;
+  width: 15vw;
   border: none;
-  display: inline-flex;
 }
 
 #featureCardsSectionId {
@@ -76,11 +75,25 @@ Feature Cards
   justify-content: center;
   margin-top: 2em;
   margin-bottom: 3em;
+  
 }
 
-
+#featureH5 {
+  font-size: 40px;
+  background: linear-gradient(180deg, #7F7EFF 0%, rgba(255, 255, 255, 0) 100%), #A390E4;
+  box-shadow: 0px 4px 10px 3px #1F7A8C, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-family: "Lato", sans-serif important!;
+  border: none;
+  border-radius: 5px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+/* feature card descriptions*/
 #separateFeature {
+  font-size: 17px;
+  margin-top: 10px;
   
+
 }
 /* HOMEPAGE HEADING. should probably have its own id */
 .display-4 {
@@ -89,10 +102,14 @@ Feature Cards
   display: flex;
   text-align: center;
   justify-content: center;
+  letter-spacing: 8px;
+  font-size: 80px;
+  
 }
 
 #features {
   margin-top: 1em;
+  
 }
 /*
 =============== 
