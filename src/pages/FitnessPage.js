@@ -20,7 +20,7 @@ import { GlobalContext } from "../context/GlobalState.js";
 import  AddMedicine  from "../components/AddMedicine";
 import  Editmedicine  from "../components/Editmedicine";
 import { Link } from "react-router-dom";
-
+import Logo from "../images/Logo.png";
 /* end of imports */
 
 /*
@@ -38,30 +38,28 @@ const FitnessPage = () => {
                 <Route path="/edit/:id" component={Editmedicine} exact />
                 <>
                 <div className="App">
-        <div class="container-fluid" >
-        <h1 id="medicineLog" >Medicine Log</h1>
-        <Link to="/add">
-            <button>
-                <span>Add Medicine</span>
-            </button>
-            </Link>
-
-        <div class="row">
-            
-            <div class="col-sm d-flex justify-content-center">                
-    <div id="medicineContainer">        
-{/*     <h1 id="medicineLog">Medicine Log</h1>
- */}           
-            <div class="container-fluid">
-                    <MedicineList />
-            </div>
-            </div>
+                    <div class="container-fluid" >
+                        <h1 id="medicineLog" >Medicine Log</h1> 
+                            <div class="row">            
+                                <div class="col-sm d-flex justify-content-center">                
+                                    <div id="medicineContainer">        
+                                        <div class="container-fluid">
+                                            <MedicineList />
+                                            <Link to="/add">
+                                                <button>
+                                                    <span>Add Medicine</span>
+                                                </button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm justify-content-center"> 
+                                <img id="bikeImg" class="img-fluid" src={Logo} />
 </div>
-{/*  */}
-        <div class="col-sm d-flex justify-content-center align-items-end"
-            id="appCalendarId">
-            <CalendarScript2 />
-        </div>
+                <div class="col-sm d-flex justify-content-center align-items-end"
+                    id="appCalendarId">
+                        <CalendarScript2 />
+                </div>
         </div>
     </div>
     </div>

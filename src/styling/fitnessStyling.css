@@ -102,3 +102,7 @@ input {
 .addMedBtn {
 
 }
+
+#bikeImg {
+  min-width: 400px;
+}
