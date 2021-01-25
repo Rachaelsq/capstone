@@ -37,11 +37,9 @@ header {
 #todoContainer{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
     margin-left: 5px;
-/*     max-width: 800px;
- */   
+/*     width: 60vw;   
+ */
     max-height: 600px;
     font-family: "Lato", sans-serif important!;
     margin-right: 5px;
@@ -72,17 +70,19 @@ input {
   margin-bottom: 10px;
 }
 
-
+form input {
+  height: 20%;
+  width:35vw;
+}
 
 form {
     min-height: 10vh;
-  
   }
   form input,
   form button {
-    font-size: 2rem;
+    font-size: 1.3rem;
     border: none;
-    background: white;
+    background: rgb(209, 240, 255);
   }
   form button {
     color: #428eff;
@@ -101,21 +101,23 @@ form {
 
 
 .todo-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+/*     background-color: green;
+ */    margin-left: 0px;
+    margin-right: 0px;
+    width: 50vw;
 }
 
 .todo-list {
-    min-width: 30%;
     list-style: none;
 }
 
 .todo {
     margin: 1rem;
-    background: white;
+    background: rgb(255, 255, 255);
     font-size: 1.5rem;
     color: black;
+    width: 80%;
+    height: 10vh;
 /*  display: flex;
     justify-content: space-between;
     align-items: center; */
@@ -137,6 +139,9 @@ form {
     cursor: pointer;
     font-size: 1rem;
     border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
 }
 .complete-btn {
     background: rgb(11, 212, 162);

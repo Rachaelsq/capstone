@@ -50,6 +50,7 @@ EXPORTING APP
 */
 export default function App() {
   return (
+    <GlobalProvider>
     <Router>
       <React.Fragment>
         <Navbar />
@@ -65,5 +66,6 @@ export default function App() {
         {/* <Navbar2 /> */}
       </React.Fragment>
     </Router>
+    </GlobalProvider>
   );
 }

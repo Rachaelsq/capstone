@@ -7,7 +7,7 @@ export default (state, action) => {
             (medicine) => medicine.id !== action.payload
             )
         };
-        case "ADD_MEDICINES":
+        case "ADD_MEDICINE":
             return {
             ...state,
 /*             medicines: [action.payload, ...state.medicines]*/

@@ -9,7 +9,8 @@ const MedicineList = () => {
     const { medicines, removeMedicine, editMedicine } = useContext(GlobalContext);
 return (
     <Fragment>
-        
+        <h1 id="medicineLog" >Medicine Log</h1> 
+
         {medicines.length > 0 ? (
     <Fragment>
         {medicines.map((medicine) => (

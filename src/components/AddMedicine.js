@@ -9,7 +9,7 @@ import "../styling/fitnessStyling.css";
 const Addmedicine = () => {
     const [name, setName] = useState("");
     const [directions, setDirections] = useState("");
-    const { addMedicine, medicines } = useContext(GlobalContext);
+    const {medicines, addMedicine} = useContext(GlobalContext);
     let history = useHistory();
 
     const onSubmit = (e) => {

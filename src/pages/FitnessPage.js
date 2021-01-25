@@ -32,14 +32,12 @@ FITNESS PAGE
 
 const FitnessPage = () => {
     return (
-        <GlobalProvider>
             <Switch>
                 <Route path="/add" component={AddMedicine} exact />
                 <Route path="/edit/:id" component={Editmedicine} exact />
                 <>
                 <div className="App">
                     <div class="container-fluid" >
-                        <h1 id="medicineLog" >Medicine Log</h1> 
                             <div class="row">            
                                 <div class="col-sm d-flex justify-content-center">                
                                     <div id="medicineContainer">        
@@ -65,7 +63,6 @@ const FitnessPage = () => {
     </div>
                 </>
             </Switch>
-        </GlobalProvider>
     );
 }
 
