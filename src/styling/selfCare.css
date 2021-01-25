@@ -48,7 +48,14 @@ featured artist
 #artContainer {
   background: linear-gradient(180deg, #7f7eff 0%, rgba(255, 255, 255, 0) 100%),
     #a390e4;
-
+/* 
+    background: linear-gradient(
+      180deg,
+      rgba(127, 126, 255, 0.3) 0%,
+      rgba(163, 144, 255, 0) 50%
+    ),
+    rgba(163, 144, 228, 0.3);
+ */
   box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   width: 45vw;

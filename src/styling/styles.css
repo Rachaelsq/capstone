@@ -189,11 +189,10 @@ MEDIA SCREENS
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+
+
 }
 
-.navbar {
-  margin-bottom: 100px;
-}
 
 /* mid size media */
 
@@ -201,5 +200,6 @@ MEDIA SCREENS
   #appCalendarId {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 20px;
   }
 }

@@ -10,6 +10,8 @@ import CalendarScript2 from "../components/CalendarScript2";
 import "../styling/moodpagestyling.css";
 import "../styling/timerstyling.css";
 import "../styling/journalstyling.css";
+import Logo2 from "../images/Logo2.png";
+
 
 /* end of imports */
 /*
@@ -72,17 +74,18 @@ const newArray = journalEntryArray;
                 />
             </div>
 
-            <div class="col-sm d-flex justify-content-center">
+            <div class="col-sm justify-content-center">
                 <MeditationTimer />
-{/*                 <JournalList list={journalEntryArray} />
- */}            </div>
+                {/*  <JournalList list={journalEntryArray} />*/}            
+                    <img id="logoImg" class="img-fluid" src={Logo2} />
+                </div>
 
             <div class="col-sm d-flex justify-content-center">
                 <MoodDropdown />
             </div>
 
             <div
-                class="col-sm d-flex justify-content-center align-items-end"
+                class="col-sm d-flex justify-content-center"
                 id="appCalendarId"
             >
                 <CalendarScript2 />
