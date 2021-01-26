@@ -12,7 +12,6 @@ import "../styling/fitnessStyling.css";
 import "../styling/timerstyling.css";
 import "../styling/journalstyling.css";
 import MedicineGlobalState from "../context/GlobalState.js"
-import AppReducer from "../context/AppReducer.js" 
 import MedicineList from "../components/MedicineList";
 import { Route, Switch } from "react-router-dom";
 import { GlobalProvider } from "../context/GlobalState.js";

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import Calendar from "react-calendar";
-import Navbar from "../components/Navbar.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Journal from "../components/Journal";
 import MeditationTimer from "../components/MeditationTimer";
-import JournalList from "../components/JournalList";
+/* import JournalList from "../components/JournalList";
+ */
 import MoodDropdown from "../components/MoodDropdown";
 import CalendarScript2 from "../components/CalendarScript2";
 import "../styling/moodpagestyling.css";

@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import Calendar from "react-calendar";
-import Navbar from "../components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MoodDropdown from "../components/MoodDropdown";
 import CalendarScript2 from "../components/CalendarScript2";
 import { ButtonContainer } from "./Button.js";
 import "../styling/styles.css";

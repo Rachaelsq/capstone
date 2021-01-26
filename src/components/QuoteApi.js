@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Quotes from "./Quotes.js";
-import { ButtonContainer } from "./Button.js";
+import React from "react";
+/* import Quotes from "./Quotes.js";
+import { ButtonContainer } from "./Button.js"; */
 import "../styling/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 

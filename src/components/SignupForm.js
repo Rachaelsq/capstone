@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styled from "styled-components";
+/* import styled from "styled-components";
+ */
 import { ButtonContainer } from "./Button.js";
 import "../styling/styles.css";
 /* end of imports */

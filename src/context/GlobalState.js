@@ -30,6 +30,7 @@ export const GlobalContext = createContext({});
   //provider component
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
+    
     function removeMedicine(id) {
         dispatch({
             type: "REMOVE_MEDICINE",

@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import Calendar from "react-calendar";
-import Navbar from "../components/Navbar";
+/* import Navbar from "../components/Navbar";
+ */
 import "bootstrap/dist/css/bootstrap.min.css";
 import FeatureCards from "../components/FeatureCards";
 import QuoteApi from "../components/QuoteApi";
 import Quotes from "../components/Quotes";
-import ToDoHeader from "../components/ToDoHeader";
+/* import ToDoHeader from "../components/ToDoHeader";
+ */
 import ToDoForm from "../components/ToDoForm";
 import ToDoList from "../components/ToDoList";
 import SignupForm from "../components/SignupForm";
