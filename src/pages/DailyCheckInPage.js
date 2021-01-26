@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styling/dailyStyle.css";
-
-/* import CalendarScript2 from "./components/CalendarScript2.js";*/
+import CalendarScript2 from "../components/CalendarScript2.js";
+import MedicineList from "../components/MedicineList";
 /* end of imports */
 
 export default function DailyCheckInPage() {
@@ -16,22 +16,28 @@ if (localStorage.getItem("journalEntry")) {
     console.log(dailyJournal, "daily journal");
     }, []);
 
-return (
-    <div class="container-fluid dailyContainer" style={{ color: "white" }}>
-        <h3> this is a daily check in</h3>
-    <div class="row" style={{ color: "white" }}>
-        <div class="col-sm d-flex justify-content-center ">{dailyJournal}</div>
+    return (
+        <div className="App">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm d-flex justify-content-center"></div>
 
-        <div class="col-sm d-flex justify-content-center "></div>
+                <div class="col-sm justify-content-center"></div>
 
-        <div class="col-sm d-flex justify-content-center "></div>
+                <div class="col-sm">
+                    <MedicineList />
+                </div>
 
-        <div
-            class="col-sm d-flex justify-content-center align-items-end"
-            id="appCalendarId"
-        ></div>
+                <div
+                    class="col-sm d-flex justify-content-center"
+                    id="appCalendarId"
+                >
+                    <CalendarScript2 />
+                </div>
+        </div>
+        </div>
     </div>
-    </div>
-);
-}
+    );
+};
+
 

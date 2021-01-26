@@ -20,7 +20,7 @@ const Addmedicine = () => {
             directions
         };
         addMedicine(newMedicine);
-        history.push("/");
+        history.push("/fitnesspage");
     };
 
     return (
@@ -56,12 +56,12 @@ const Addmedicine = () => {
                 />
                 </div>
                 <div >
-                <button className="addMedBtn">
+                <button className="" id="addMedBtn" >
                     Add medicine
                 </button>
             </div>
             <div >
-                <Link to="/">Cancel</Link>
+                <Link to="/fitnesspage">Cancel</Link>
             </div>
             </form>
         </div>

@@ -25,7 +25,7 @@ const Editmedicine = (route) => {
     const onSubmit = (e) => {
         e.preventDefault();
         editMedicine(selectedUser);
-        history.push("/");
+        history.push("/fitnesspage");
     };
 
     const handleOnChange = (userKey, value) =>
@@ -71,7 +71,7 @@ const Editmedicine = (route) => {
                 </button>
             </div>
             <div className="text-center mt-4 text-gray-500">
-                <Link to="/">Cancel</Link>
+                <Link to="/fitnesspage">Cancel</Link>
             </div>
             </form>
         </div>

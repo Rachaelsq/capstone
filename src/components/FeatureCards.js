@@ -27,16 +27,38 @@ const featurecards = [
 
 return (
     <React.Fragment>
+            {featurecards.map((featurecard) => (
+            <div class="card" id="featureCards">
+                <div class="card-body">
+                <div>
+                    <div id="featureCard">
+                        <FeatureCard class="featureTitle"
+                        subtitle={featurecard.subtitle}
+                        description={featurecard.description}
+                        />
+                    </div>
+                </div>
+                </div>
+            </div>
+            ))}
+    </React.Fragment>
+);
+};
+
+export default FeatureCards;
+
+
+
+
+/* return (
+    <React.Fragment>
     <div class="card" id="featureCards">
         <div class="card-body">
             {featurecards.map((featurecard) => (
             <div>
                 <div id="featureCard">
                     <FeatureCard class="featureTitle"
-                    subtitle=
-                   
-                    {featurecard.subtitle}
-                            
+                    subtitle={featurecard.subtitle}
                     description={featurecard.description}
                     />
                 </div>
@@ -47,5 +69,4 @@ return (
     </React.Fragment>
 );
 };
-
-export default FeatureCards;
+ */

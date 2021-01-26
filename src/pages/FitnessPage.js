@@ -43,7 +43,7 @@ const FitnessPage = () => {
                                         <div class="container-fluid">
                                             <MedicineList />
                                             <Link to="/add">
-                                                <button>
+                                                <button id="addMedBtn"> 
                                                     <span>Add Medicine</span>
                                                 </button>
                                             </Link>

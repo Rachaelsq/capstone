@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Comfortaa', cursive important!;
   color: white important!;
 
@@ -31,6 +30,11 @@ BODY
 body {
 }
 
+/*
+==================== 
+CONTAINERS AND CARDS
+====================
+*/
 #medicineContainer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -44,19 +48,77 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: linear-gradient(180deg, #C68866 1.56%, rgba(255, 255, 255, 0) 100%), #CC8B8C;
+/*   background: linear-gradient(180deg, #C68866 1.56%, rgba(255, 255, 255, 0) 100%), #CC8B8C;*/  
+  background-color: #0f523d80;
   box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
 
+#cardColor{
+  /*   background-color: red;*/  
+  border-radius: 20px;
+  background-color: #0f523d80;
+  box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  #editContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #addMedContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+  
+  }
+
+  /*
+=============== 
+BUTTONS
+===============
+*/
 
 button {
   color: white;
-  background-color: #8a7ad4;
+  background-color: #1da076;
   border-radius: 7px;
   box-shadow: 0px 3px 5px 1px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 1.2em;
+}
+#addMedBtn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#editMedicine {
+  font-size: 20px;
+
+}
+#editButton{
+margin-bottom:10px;
+margin-right:15px;
 }
 
+#deleteButton{
+  margin-bottom:10px;
+  margin-right:15px;
+}
+
+
+/*
+=============== 
+HEADINGS AND INPUT
+===============
+*/
 #medicineLog {
   text-align: center;
 }
@@ -71,30 +133,10 @@ input {
   border: none;
 }
 
-#editMedicine {
-  font-size: 20px;
 
-}
 
-#editContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  
-}
 
-#addMedContainer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-size: 12px;
 
-}
-
-.addMedBtn {
-}
 
 #bikeImg {
   min-width: 400px;

@@ -15,7 +15,7 @@ return (
     <Fragment>
         {medicines.map((medicine) => (
             <div
-                className="flex items-center bg-gray-100 mb-10 shadow"
+                id="cardColor"className="flex items-center bg-gray-100 mb-10 shadow"
                 key={medicine.id}
             >
             <div className="flex-auto text-left px-4 py-2 m-2">
@@ -26,14 +26,15 @@ return (
                 <Link to={`/edit/${medicine.id}`}>
                     <button
                         onClick={() => editMedicine(medicine.id)}
-                        className="editButton"
+                        id="editButton"
                     >
                     Edit
                     </button>
                 </Link>
                 <button
                     onClick={() => removeMedicine(medicine.id)}
-                    className="deleteButton"
+                    className=""
+                    id="deleteButton"
                 >
                     Delete
                 </button>
