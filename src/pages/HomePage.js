@@ -13,7 +13,7 @@ import ToDoList from "../components/ToDoList";
 import SignupForm from "../components/SignupForm";
 import { ButtonContainer } from "../components/Button.js";
 import "../styling/styles.css";
-
+import Logo3 from "../images/Logo3.png";
 
 /*
 =============== 
@@ -26,29 +26,29 @@ HOME PAGE
 
     return(
     <div className="App">
+{/*         <img id="Logo3" src={Logo3} />
+ */}
     <div class="container">
+        
         <h1 class="display-4">welcome home.</h1>
         <section section id="featureCardsSectionId">
             <FeatureCards />
         </section>
 
-
-        <div id="todoContainer">
-        <div>
-
-{/*         <ToDoHeader />
- */}        
-        <ToDoForm  class="col-sm d-flex justify-content-center"
+        <section id="todoSection">
+        <div id="todoContainer" >
+        <div class="todoCol" >     
+        <ToDoForm 
         inputText={inputText} 
         todos={todos} 
         setTodos={setTodos} 
         setInputText={setInputText}
         />
-
-        <ToDoList setTodos={setTodos} todos={todos} />
+        <ToDoList  setTodos={setTodos} todos={todos} />
         </div>
         </div>
-
+        </section>
+{/* class="col-sm d-flex justify-content-center" */}
 
 
 
@@ -60,8 +60,11 @@ HOME PAGE
             <div class="col-sm d-flex justify-content-center">
                 <SignupForm />
             </div>
+            
     </div>
+
     </div>
+    
 );
 }
 //end homepage

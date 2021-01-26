@@ -38,22 +38,20 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 5px;
-/*     width: 60vw;   
- */
+    width: 65%;  
     max-height: 600px;
     font-family: "Lato", sans-serif important!;
     margin-right: 5px;
     margin-top: 2rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     text-align: center;
     background: linear-gradient(180deg, #0%, rgba(255, 255, 255, 0) 0%), #cc8b8c;
     box-shadow: 0px 4px 10px 3px #9B8BE6, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-  
+    display: flex;
+    justify-content: center;
+    align-content: center;  
 }
 
 header {
@@ -100,15 +98,26 @@ form {
 }
 
 
-.todo-container {
-/*     background-color: green;
- */    margin-left: 0px;
+#todo-container {
+    margin-left: 0px;
     margin-right: 0px;
     width: 50vw;
+    display: flex;
+      align-items: center; 
+      justify-content: center;
+    
+}
+
+#todoSection{
+  display: flex;
+      align-items: center; 
+      justify-content: center;
+    
 }
 
 .todo-list {
     list-style: none;
+    
 }
 
 .todo {
@@ -116,10 +125,8 @@ form {
     font-size: 1.5rem;
     color: black;
     width: 80%;
-/*  display: flex;
-    justify-content: space-between;
-    align-items: center; */
     transition: all 1s ease;
+    
 }
 .filter-todo {
     padding: 1rem;
@@ -130,13 +137,14 @@ form {
     height: 5vh;
     border-radius: 7px;
     box-shadow: 0px 1px 5px 2px #1d1d1d, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
-
+    width: fit-content;
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    
-
 
 }
+
+
+
 
 .trash-btn,
 .complete-btn {

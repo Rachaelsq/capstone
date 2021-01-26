@@ -165,6 +165,14 @@ QUOTE BOX
 
 /* background: linear-gradient(180deg, rgba(181, 255, 252, .3) 0%, rgba(255, 255, 255, 0) 50%),rgba(31, 122, 140, 0.3); */
 
+
+
+#logo3 {
+  position:absolute;
+  margin-bottom:-50px;
+  margin-left:-10px;
+}
+
 /*
 =============== 
 MEDIA SCREENS
