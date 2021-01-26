@@ -6,7 +6,7 @@ import "../styling/styles.css";
 
 export default function App() {
 return (
-        <div id="artContainer">
+        <div id="boxContainer">
             <h1>this is the feel good box</h1>
             <div id="artImage"></div>
         </div>

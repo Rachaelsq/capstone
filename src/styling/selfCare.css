@@ -40,6 +40,7 @@ h1 {
   color: white important!;
 }
 
+
 /*
 =============== 
 featured artist
@@ -58,8 +59,38 @@ featured artist
  */
   box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  width: 45vw;
-  max-width: 350px;
+  width: 85vw;
+  max-width: 600px;
+  height: 50vw;
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+
+.art {
+  width:80%;
+  border-radius: 5px;
+}
+
+#artId{
+
+}
+/*
+=============== 
+FEEL GOOD BOX
+===============
+*/
+#boxContainer {
+  background: linear-gradient(180deg, #7f7eff 0%, rgba(255, 255, 255, 0) 100%),
+    #a390e4;
+
+  box-shadow: 0px 4px 10px 3px #1f7a8c, inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 85vw;
+  max-width: 400px;
   height: 30vw;
   margin-top: 2rem;
+  margin-right: 20px;
 }
+
